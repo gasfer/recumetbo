@@ -31,11 +31,11 @@
 <details>
 <summary><b>Ver Detalles</b></summary>
 
-- **React 18** → Interfaces dinámicas  
-- **Vite** → Bundler ultrarrápido  
-- **Tailwind CSS** → Estilos modernos y responsivos  
-- **Framer Motion** → Animaciones fluidas  
-- **Lucide React** → Iconografía clara y minimalista  
+- ⚛️ **React 18** → Interfaces dinámicas  
+- ⚡ **Vite** → Bundler ultrarrápido  
+- 🎨 **Tailwind CSS** → Estilos modernos y responsivos  
+- 🎞️ **Framer Motion** → Animaciones fluidas  
+- 🖼️ **Lucide React** → Iconografía clara y minimalista  
 
 </details>
 
@@ -61,8 +61,8 @@
 <details>
 <summary><b>Ver Requisitos</b></summary>
 
-- Node.js **20.x LTS**  
-- npm (incluido con Node.js) o [pnpm](https://pnpm.io) o [yarn](https://yarnpkg.com)  
+- 📌 Node.js **20.x LTS**  
+- 📌 npm (incluido con Node.js) o [pnpm](https://pnpm.io) o [yarn](https://yarnpkg.com)  
 
 </details>
 
@@ -88,4 +88,25 @@ yarn install
 npm run dev
 
 # 4. Acceder en el navegador
-http://localhost:5173
+http://localhost:3000
+
+📂 Estructura del proyecto
+recumetbo/
+├── public/          # Archivos estáticos
+├── src/             # Código fuente principal
+│   ├── assets/      # Recursos (imágenes, íconos, etc.)
+│   ├── components/  # Componentes reutilizables
+│   ├── App.jsx      # Componente raíz
+│   └── main.jsx     # Punto de entrada
+├── index.html       # HTML principal
+├── package.json     # Dependencias y scripts
+└── vite.config.js   # Configuración de Vite
+🌐 Despliegue
+
+🚀 Compatible con Vercel
+
+🌍 Opción alternativa: Netlify
+
+🔧 Genera una build optimizada con:
+
+npm run build
