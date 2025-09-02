@@ -1,0 +1,45 @@
+import React, { useState } from "react";
+import { Search } from "lucide-react";
+
+const SearchBar = ({ menuItems, closeMobileMenu }) => {
+  const [query, setQuery] = useState("");
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (!query) return;
+
+    // Buscamos coincidencias exactas de sección
+    const foundSection = menuItems.find(
+      (sec) => sec.label.toLowerCase() === query.toLowerCase()
+    );
+
+    if (foundSection) {
+      const el = document.getElementById(foundSection.id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+      setQuery(""); // Limpiar input
+      if (closeMobileMenu) closeMobileMenu(); // cerrar menú mobile si está abierto
+    } else {
+      alert("No se encontró la sección.");
+    }
+  };
+
+  return (
+    <form
+      onSubmit={handleSearch}
+      className="flex items-center border border-white/50 rounded-full px-2 sm:px-3 py-1 sm:py-1.5 hover:shadow-md transition bg-white/10 ml-2 w-full sm:w-auto"
+    >
+      <input
+        type="text"
+        placeholder="Buscar..."
+        className="outline-none px-2 text-xs sm:text-sm text-white placeholder-white/80 bg-transparent w-full sm:w-32 focus:w-36 transition-all"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <button type="submit">
+        <Search className="w-4 h-4 text-white" />
+      </button>
+    </form>
+  );
+};
+
+export default SearchBar;
