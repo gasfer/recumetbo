@@ -1,117 +1,67 @@
 # ♻️ Recumet Bolivia: Tu Portal de Metales Reciclados
 
-Bienvenido al **futuro del reciclaje de metales**.  
-Este es el portal web de **Recumet Bolivia**, tu aliado estratégico en la gestión y comercialización de **metales reciclados de alta calidad**.  
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-00B04E?style=for-the-badge&logo=react&logoColor=white" alt="React Badge"/>
+  <img src="https://img.shields.io/badge/Vite-Bundler-F6AB00?style=for-the-badge&logo=vite&logoColor=white" alt="Vite Badge"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-Styling-86B500?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind Badge"/>
+  <img src="https://img.shields.io/badge/FramerMotion-Animations-272724?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion Badge"/>
+</p>
 
-Aquí la **sostenibilidad** se encuentra con la **eficiencia**, y el diseño moderno se fusiona con la **funcionalidad robusta**.  
+<p align="center">
+  <b>Bienvenido al futuro del reciclaje de metales.</b><br>
+  Este es el portal web de <b>Recumet Bolivia</b>, tu aliado estratégico en la gestión y comercialización de metales reciclados de alta calidad.  
+</p>
 
 ---
 
 ## 🚀 Stack Tecnológico
 
-- **React 18** → Interfaces de usuario interactivas y dinámicas.  
-- **Vite** → Arranque ultrarrápido y hot reload inmediato.  
-- **Tailwind CSS** → Estilos responsivos, modernos y consistentes.  
-- **Framer Motion** → Animaciones fluidas y dinámicas.  
-- **Lucide React** → Iconografía clara y minimalista.  
+<ul>
+  <li><b style="color:#00B04E">React 18</b> → Interfaces interactivas y dinámicas.</li>
+  <li><b style="color:#F6AB00">Vite</b> → Arranque ultrarrápido y hot reload inmediato.</li>
+  <li><b style="color:#86B500">Tailwind CSS</b> → Estilos modernos, minimalistas y responsivos.</li>
+  <li><b style="color:#272724">Framer Motion</b> → Animaciones suaves y profesionales.</li>
+  <li><b>Lucide React</b> → Iconografía clara y elegante.</li>
+</ul>
 
 ---
 
 ## 🎨 Paleta Recumet
 
-- **Verde Recumet** → `#00B04E`  
-- **Verde Alternativo** → `#86B500`  
-- **Naranja Metálico** → `#F6AB00`  
-- **Gris Carbón** → `#272724`  
-- **Blanco / Grises claros** → `#FFFFFF`, `#F9FAFB`, `#F3F4F6`  
+<div align="center">
+
+| Color | Hex | Preview |
+|-------|------|---------|
+| 🟢 Verde Recumet | `#00B04E` | <img src="https://via.placeholder.com/40/00B04E/FFFFFF?text=+" /> |
+| 🟢 Verde Alternativo | `#86B500` | <img src="https://via.placeholder.com/40/86B500/FFFFFF?text=+" /> |
+| 🟠 Naranja Metálico | `#F6AB00` | <img src="https://via.placeholder.com/40/F6AB00/FFFFFF?text=+" /> |
+| ⚫ Gris Carbón | `#272724` | <img src="https://via.placeholder.com/40/272724/FFFFFF?text=+" /> |
+| ⚪ Blancos / Grises claros | `#FFFFFF`, `#F9FAFB`, `#F3F4F6` | <img src="https://via.placeholder.com/40/F9FAFB/000000?text=+" /> |
+
+</div>
 
 ---
 
 ## 📦 Requisitos Previos
 
-- [Node.js 20.x](https://nodejs.org/) (LTS recomendado)  
-- npm (incluido) o pnpm o yarn  
+- [Node.js 20.x LTS](https://nodejs.org/)  
+- npm (incluido con Node.js) o [pnpm](https://pnpm.io) o [yarn](https://yarnpkg.com)
 
 ---
 
 ## ⚙️ Ejecución en Local
 
-1. **Clonar el repositorio**:
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/tu-usuario/recumet-bolivia.git
+cd recumet-bolivia
 
-   ```bash
-   git clone https://github.com/gasfer/recumetbo.git
-   cd recumetbo
-   ```
+# 2. Instalar dependencias
+npm install
+# o
+pnpm install
+# o
+yarn install
 
-2. **Instalar dependencias**:
-
-   ```bash
-   npm install
-   # o
-   pnpm install
-   # o
-   yarn install
-   ```
-
-3. **Iniciar el proyecto**:
-
-   ```bash
-   npm start
-   ```
-
-   Luego abre 👉 [http://localhost:3000](http://localhost:3000)  
-
----
-
-## 🌐 Despliegue en Vercel
-
-1. Crea una cuenta en [Vercel](https://vercel.com/) si no la tienes.  
-2. Desde el **dashboard**, haz clic en **New Project**.  
-3. Importa tu repositorio desde **GitHub**.  
-4. Vercel detectará automáticamente que el proyecto usa **Vite + React**.  
-5. Configuración recomendada:
-   - **Framework Preset**: `Vite`  
-   - **Build Command**: `npm run build`  
-   - **Output Directory**: `dist`  
-6. Haz clic en **Deploy** y en segundos tu portal estará en línea ✨  
-
----
-
-## ✨ Funcionalidades
-
-- Catálogo interactivo de **productos reciclados**.  
-- **Filtros inteligentes** (ferroso / no ferroso, nombre, tipo).  
-- Descarga del catálogo en **un clic**.  
-- Animaciones modernas y fluidas.  
-- Diseño **responsivo y minimalista**.  
-
----
-
-## 🤝 Contribuciones
-
-1. Haz un fork del repositorio.  
-2. Crea una rama:  
-   ```bash
-   git checkout -b feature/nueva-funcionalidad
-   ```
-3. Realiza cambios y haz commit:  
-   ```bash
-   git commit -m "feat: nueva funcionalidad"
-   ```
-4. Sube tu rama:  
-   ```bash
-   git push origin feature/nueva-funcionalidad
-   ```
-5. Abre un **Pull Request**.  
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo licencia **MIT**.  
-Libre para usar y modificar.  
-
----
-
-✨ Gracias por visitar **Recumet Bolivia**.  
-🌍 Juntos construimos un futuro más sostenible.  
+# 3. Iniciar el servidor
+npm start
