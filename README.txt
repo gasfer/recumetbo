@@ -16,14 +16,14 @@
 ---
 
 ## 📑 Índice
-- [Stack Tecnológico](#-stack-tecnológico)
-- [Paleta Recumet](#-paleta-recumet)
-- [Requisitos Previos](#-requisitos-previos)
-- [Instalación y Ejecución](#️-instalación-y-ejecución)
-- [Despliegue](#-despliegue)
-- [Funcionalidades](#-funcionalidades)
-- [Contribuciones](#-contribuciones)
-- [Licencia](#-licencia)
+- [🚀 Stack Tecnológico](#-stack-tecnológico)
+- [🎨 Paleta Recumet](#-paleta-recumet)
+- [📦 Requisitos Previos](#-requisitos-previos)
+- [⚙️ Instalación y Ejecución](#️-instalación-y-ejecución)
+- [🌐 Despliegue](#-despliegue)
+- [✨ Funcionalidades](#-funcionalidades)
+- [🤝 Contribuciones](#-contribuciones)
+- [📄 Licencia](#-licencia)
 
 ---
 
@@ -31,11 +31,11 @@
 <details>
 <summary><b>Ver Detalles</b></summary>
 
-- **React 18** → Interfaces dinámicas.  
-- **Vite** → Bundler ultrarrápido.  
-- **Tailwind CSS** → Estilos modernos y responsivos.  
-- **Framer Motion** → Animaciones fluidas.  
-- **Lucide React** → Iconografía clara y minimalista.  
+- **React 18** → Interfaces dinámicas  
+- **Vite** → Bundler ultrarrápido  
+- **Tailwind CSS** → Estilos modernos y responsivos  
+- **Framer Motion** → Animaciones fluidas  
+- **Lucide React** → Iconografía clara y minimalista  
 
 </details>
 
@@ -73,9 +73,9 @@
 <summary><b>Guía Paso a Paso</b></summary>
 
 ```bash
-# 1. Clonar repositorio
-git clone https://github.com/tu-usuario/recumet-bolivia.git
-cd recumet-bolivia
+# 1. Clonar repositorio oficial
+git clone https://github.com/gasfer/recumetbo.git
+cd recumetbo
 
 # 2. Instalar dependencias
 npm install
@@ -85,4 +85,7 @@ pnpm install
 yarn install
 
 # 3. Iniciar el servidor de desarrollo
-npm start
+npm run dev
+
+# 4. Acceder en el navegador
+http://localhost:5173
