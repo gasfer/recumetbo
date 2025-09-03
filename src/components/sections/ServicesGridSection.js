@@ -72,12 +72,12 @@ const services = [
         ]
       }
     ],
-    finalMessage: "✨ Transformamos sus residuos en oportunidades ambientales",
-    ctaText: "📩 Contáctenos para soluciones corporativas"
+    finalMessage: "Transformamos sus residuos en oportunidades ambientales",
+    ctaText: "Contáctenos para soluciones corporativas"
   },
   {
     key: "electronicos",
-    title: "Pymes, Talleres y Hogares",
+    title: "Pymes, Talleres y Domiciliarios",
     description: "Recolección y gestión de residuos electrónicos y eléctricos, cuidando el medio ambiente.",
     icon: <FaLaptop size={40} className="text-[#F6AB00]" />,
     slides: [
@@ -122,8 +122,8 @@ const services = [
         ]
       }
     ],
-    finalMessage: "💫 Reciclaje responsable de tecnología para un futuro sostenible",
-    ctaText: "📩 Solicite recolección ahora"
+    finalMessage: "Reciclaje responsable de tecnología para un futuro sostenible",
+    ctaText: "Solicite recolección ahora"
   },
   {
     key: "acopiadores",
@@ -172,13 +172,13 @@ const services = [
         ]
       }
     ],
-    finalMessage: "🌟 Su mejor socio comercial para la venta de materiales reciclables",
-    ctaText: "📩 Coordine la venta de su material"
+    finalMessage: "Su mejor socio comercial para la venta de materiales reciclables",
+    ctaText: "Coordine la venta de su material"
   },
   {
     key: "exportacion",
     title: "Exportación y Comercio Internacional",
-    description: "Clasificación y comercialización de metales bajo normas internacionales (ReMA / ISRI).",
+    description: "Clasificación y comercialización de metales bajo normas internacionales (ReMA).",
     icon: <FaGlobe size={40} className="text-[#272724]" />,
     slides: [
       {
@@ -196,7 +196,7 @@ const services = [
         title: "Calidad Estandarizada",
         icon: <FaCog size={24} className="text-[#272724]" />,
         content: [
-          "Material bajo ReMA's ISRI Specifications",
+          "Material bajo ReMA's Specifications",
           "Entregas limpias, listas para uso industrial",
           "Certificaciones internacionales de calidad"
         ]
@@ -226,14 +226,14 @@ const services = [
         title: "Confianza y Trayectoria",
         icon: <FaHandshake size={24} className="text-[#272724]" />,
         content: [
-          "+20 años de experiencia comprobada",
+          "+22 años de experiencia comprobada",
           "Comunicación directa y transparente",
           "Relaciones comerciales duraderas"
         ]
       }
     ],
-    finalMessage: "🚀 Recumet Bolivia SRL asegura volumen, calidad y continuidad",
-    ctaText: "📩 Coordine su próximo embarque"
+    finalMessage: "Recumet Bolivia SRL asegura volumen, calidad y continuidad",
+    ctaText: "Coordine su próximo embarque"
   },
 ];
 
@@ -284,7 +284,7 @@ const ServicesGridSection = () => {
   };
 
   return (
-      <section className="relative bg-white py-12 sm:py-16 overflow-hidden">
+          <section className="relative bg-gradient-to-r from-[#F6AB00]/20 via-[#FFFFFF] to-[#00B04E]/20 py-16">
       {/* Fondo decorativo */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#00B04E]/10 rounded-full blur-3xl animate-pulse"></div>
