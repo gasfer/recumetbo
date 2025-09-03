@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+//Este proyecto está desarrollado con React + Vite
 
 // Componentes
 import TopBar from "./components/TopBar";
