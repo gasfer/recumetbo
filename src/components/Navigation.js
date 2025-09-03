@@ -90,13 +90,13 @@ const Navigation = ({ activeSection, onSectionChange }) => {
   whileHover={{ scale: 1.05 }}
   onClick={() => onSectionChange("inicio")}
 >
-  <div className="flex items-center space-x-2">
+ <div className="flex items-center space-x-2">
     {/* Imagen logo */}
-    <div className="w-[60px] sm:w-[80px] h-[60px] sm:h-[80px] rounded-full bg-black border-2 border-white flex items-center justify-center overflow-hidden">
+    <div className="w-[120px] sm:w-[80px] h-[100px] sm:h-[80px] rounded-full bg-white  border-white flex items-center justify-center overflow-hidden">
       <img
-        src="recumet.png"
+        src="recumet3.png"
         alt="RECUMET"
-        className="w-10 sm:w-12 h-10 sm:h-12 object-contain"
+        className="w-12 sm:w-12 h-12 sm:h-12 object-contain"
       />
     </div>
 
@@ -110,7 +110,7 @@ const Navigation = ({ activeSection, onSectionChange }) => {
     <span className="text-white font-bold text-sm sm:hidden">
       RECUMET BOLIVIA SRL
     </span>
-  </div>
+  </div> 
 </motion.div>
 
 
