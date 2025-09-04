@@ -22,7 +22,7 @@ const GallerySection = () => {
   const [hoveredModal, setHoveredModal] = useState(false);
 
   return (
-    <section className="py-20 bg-white">
+    <section className="relative bg-gradient-to-r from-[#F6AB00]/20 via-[#FFFFFF] to-[#00B04E]/20 py-16">
       <div className="container mx-auto px-4 relative">
         {/* Título */}
         <motion.div

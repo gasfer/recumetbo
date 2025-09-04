@@ -43,7 +43,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicios" className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section id="servicios" className="relative bg-gradient-to-r from-[#F6AB00]/20 via-[#FFFFFF] to-[#00B04E]/20 py-16">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-16"

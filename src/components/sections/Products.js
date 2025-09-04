@@ -65,7 +65,7 @@ const Products = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-gray-50">
-      <section id="productos" className="py-20">
+         <section id="productos" className="relative bg-gradient-to-r from-[#F6AB00]/20 via-[#FFFFFF] to-[#00B04E]/20 py-16">
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Encabezado */}
           <motion.div

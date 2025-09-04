@@ -219,7 +219,8 @@ const DonutChart = ({
 
 const DonutSection = () => {
   return (
-    <div className="min-h-screen  py-10 flex items-center justify-center bg-gradient-to-r from-[#F6AB00]/60 to-[#00B04E]/90 text-white "> 
+    <div className="min-h-screen  py-10 flex items-center justify-center relative bg-gradient-to-r from-[#F6AB00]/20 via-[#FFFFFF] to-[#00B04E]/20 py-16"> 
+    
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -230,7 +231,7 @@ const DonutSection = () => {
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide mb-4 drop-shadow">
             Nuestro Impacto Sostenible
           </h1>
-          <p className="text-lg text-white max-w-2xl mx-auto drop-shadow">
+          <p className="text-lg text-black max-w-2xl mx-auto drop-shadow">
 “Nuestro trabajo diario impulsa un impacto positivo en empresas privadas y públicas, talleres, negocios, acopiadores, hogares y, sobre todo, en el cuidado del medio ambiente.”</p>
         </div>
 

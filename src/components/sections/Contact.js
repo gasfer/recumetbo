@@ -45,8 +45,9 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contacto" className="py-20 bg-gradient-to-br from-gray-50 to-white">
-      <div className="container mx-auto px-4">
+
+       <section id="contacto" className="relative bg-gradient-to-r from-[#F6AB00]/20 via-[#FFFFFF] to-[#00B04E]/20 py-16">
+      <div className="bg-[#00B04E] text-white py-12">
         <motion.div 
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
@@ -54,10 +55,10 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-[#272724] mb-4">
+          <h1 className="text-4xl font-bold text-[#FFFFFF] mb-4">
             Contáctanos
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          </h1>
+          <p className="text-xl text-white max-w-3xl mx-auto">
             ¿Tienes un proyecto de reciclaje? Estamos aquí para ayudarte con 
             soluciones personalizadas y asesoramiento especializado
           </p>
@@ -174,7 +175,7 @@ const Contact = () => {
                 whileHover={{ scale: 1.02 }}
               >
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878459418!3d40.74844097932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sus!4v1635959592521!5m2!1sen!2sus"
+                  src=""
                   width="100%"
                   height="250"
                   style={{ border: 0 }}

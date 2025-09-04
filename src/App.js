@@ -13,7 +13,7 @@ import About from "./components/sections/About";
 import Services from "./components/sections/Services";
 import Products from "./components/sections/Products";
 import Contact from "./components/sections/Contact";
-import Blog from "./components/sections/Blog";
+import BlogContainer from "./components/sections/BlogContainer";
 import FAQ from "./components/sections/FAQ";
 import Footer from "./components/Footer";
 import ChatAssistant from "./components/ChatAssistant";
@@ -90,11 +90,11 @@ const App = () => {
         <section id="productos">
           <Products />
         </section>
+        <section id="blog">
+          <BlogContainer />
+        </section>
         <section id="contacto">
           <Contact />
-        </section>
-        <section id="blog">
-          <Blog />
         </section>
         <section id="faqs">
           <FAQ />

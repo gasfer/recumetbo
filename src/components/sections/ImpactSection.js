@@ -7,21 +7,21 @@ import managerPhoto from "../../assets/images/gerente.jpg"; // reemplaza con la 
 const statistics = [
   {
     key: "material",
-    value: +500,
+    value: 500,
     unit: "ton",
     label: "Material procesado mensualmente",
     icon: <FaIndustry size={32} className="text-[#00B04E]" />,
   },
   {
     key: "empresas",
-    value: +500,
+    value: 2000,
     unit: "",
     label: "Empresas atendidas",
     icon: <FaBuilding size={32} className="text-[#00B04E]" />,
   },
   {
     key: "empleos",
-    value: +2000,
+    value: 3000,
     unit: "",
     label: "Empleos directos e indirectos generados",
     icon: <FaUsers size={32} className="text-[#00B04E]" />,

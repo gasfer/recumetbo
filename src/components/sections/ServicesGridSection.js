@@ -15,7 +15,9 @@ import {
   FaShieldAlt,
   FaSeedling,
   FaHome,
+  FaTags,
   FaTrophy,
+  FaUserCog,
   FaMobileAlt,
   FaDollarSign,
   FaTruck,
@@ -33,12 +35,13 @@ const services = [
     slides: [
       {
         id: 1,
-        title: "Gestión Integral de Residuos",
-        icon: <FaCheckCircle size={24} className="text-[#00B04E]" />,
+        title: "Gestión Integral de Residuos industriales,Residuos Eléctricos y Electrónicos (RAEE)",
+        icon: <FaRecycle size={40} className="text-[#00B04E]" />,
         content: [
-          "Gestión completa de residuos industriales",
-          "Procesos certificados y seguros",
-          "Manejo especializado por tipo de material"
+          "Personal y maquinaria eficiente: equipos adecuados y personal altamente capacitado.",
+          "Asignación del camión y maquinaria adecuada (estibadores, garra hidráulica o montacargas) según volumen y programación.",
+          "Servicio de recojo directo en la ubicación de la empresa o institución",
+          "Toda la logística corre por nuestra cuenta, sin costo adicional"
         ]
       },
       {
@@ -46,8 +49,8 @@ const services = [
         title: "Reportes Personalizados",
         icon: <FaFileAlt size={24} className="text-[#00B04E]" />,
         content: [
-          "Reportes ambientales detallados",
-          "Documentación para auditorías",
+          "Peso justo con balanzas industriales certificadas por el ministerio de desarrollo productivo y economia plural, garantizando transparencia en cada operación.",
+          "Informe de trazabilidad: documentación completa del proceso de transformación de residuos en nueva materia prima.",
           "Seguimiento de indicadores ambientales"
         ]
       },
@@ -56,9 +59,9 @@ const services = [
         title: "Cumplimiento Normativo",
         icon: <FaShieldAlt size={24} className="text-[#00B04E]" />,
         content: [
-          "Cumplimiento con normativas nacionales",
-          "Certificaciones ambientales",
-          "Asesoría legal especializada"
+          "Certificación disposición final y destrucción segura de equipos.",
+          "Garantía de disposición final responsable que protege la imagen y el cumplimiento legal de la organización.",
+          "Asesoría legal especializada,Evitamos multas ambientales e innecesarias derivadas de la mala disposición de residuos."
         ]
       },
       {
@@ -66,65 +69,66 @@ const services = [
         title: "Sostenibilidad Ambiental",
         icon: <FaSeedling size={24} className="text-[#00B04E]" />,
         content: [
-          "Reducción de huella de carbono",
-          "Economía circular implementada",
-          "Impacto ambiental positivo medible"
+          "Liberación de espacios de almacenamiento, reduciendo costos internos.",
+          "Economía circular implementada: Contribución a una economía circular con condiciones de mercado competitivas y favorables.",
+          "Impacto ambiental positivo medible. Conversión de residuos en recursos aprovechables mediante nuestra red de aliados."
         ]
       }
     ],
-    finalMessage: "Transformamos sus residuos en oportunidades ambientales",
-    ctaText: "Contáctenos para soluciones corporativas"
+    finalMessage: "“Transformamos sus residuos en oportunidades ambientales, generando valor económico, social y sostenible para empresas privadas, públicas y ONGs.”",
+    ctaText: "LLamanos ahora !!!  "
   },
-  {
-    key: "electronicos",
-    title: "Pymes, Talleres y Domiciliarios",
-    description: "Recolección y gestión de residuos electrónicos y eléctricos, cuidando el medio ambiente.",
-    icon: <FaLaptop size={40} className="text-[#F6AB00]" />,
-    slides: [
-      {
-        id: 1,
-        title: "Recolección Directa",
-        icon: <FaHome size={24} className="text-[#F6AB00]" />,
-        content: [
-          "Recolección directa en domicilio o taller",
-          "Servicio programado y puntual",
-          "Sin costo mínimo de recolección"
-        ]
-      },
-      {
-        id: 2,
-        title: "Seguridad de Datos",
-        icon: <FaShieldAlt size={24} className="text-[#F6AB00]" />,
-        content: [
-          "Eliminación segura de datos personales",
-          "Formateo profesional de dispositivos",
-          "Certificado de destrucción de información"
-        ]
-      },
-      {
-        id: 3,
-        title: "Certificación Responsable",
-        icon: <FaTrophy size={24} className="text-[#F6AB00]" />,
-        content: [
-          "Certificado de disposición responsable",
-          "Trazabilidad completa del proceso",
-          "Cumplimiento de normas ambientales"
-        ]
-      },
-      {
-        id: 4,
-        title: "Equipos Aceptados",
-        icon: <FaMobileAlt size={24} className="text-[#F6AB00]" />,
-        content: [
-          "Laptops, computadoras y servidores",
-          "Celulares y tablets",
-          "Electrodomésticos grandes y pequeños"
-        ]
-      }
-    ],
-    finalMessage: "Reciclaje responsable de tecnología para un futuro sostenible",
-    ctaText: "Solicite recolección ahora"
-  },
+{
+  key: "pymes",
+  title: "Pymes, Talleres y Hogares",
+  description: "Soluciones prácticas y accesibles para la recolección y gestión de residuos, adaptadas a pequeños negocios, talleres y familias.",
+  icon: <FaHome size={40} className="text-[#F6AB00]" />,
+  slides: [
+    {
+      id: 1,
+      title: "Recojo en Ubicación",
+      icon: <FaTruck size={24} className="text-[#F6AB00]" />,
+      content: [
+        "Servicio directo en el lugar de origen",
+        "Flexibilidad según la cantidad de residuos",
+        "Comodidad y rapidez en la atención"
+      ]
+    },
+    {
+      id: 2,
+      title: "Peso Justo",
+      icon: <FaBalanceScale size={24} className="text-[#F6AB00]" />,
+      content: [
+        "Balanzas industriales certificadas",
+        "Medición precisa y transparente",
+        "Garantía de confianza en cada operación"
+      ]
+    },
+    {
+      id: 3,
+      title: "Precio Competitivo",
+      icon: <FaTags size={24} className="text-[#F6AB00]" />,
+      content: [
+        "Condiciones favorables para PYMES y hogares",
+        "Reducción de costos de almacenaje",
+        "Tarifas justas según el volumen recolectado"
+      ]
+    },
+    {
+      id: 4,
+      title: "Personal y Maquinaria Eficiente",
+      icon: <FaUserCog size={24} className="text-[#F6AB00]" />,
+      content: [
+        "Personal capacitado y confiable",
+        "Tecnología y equipos modernos",
+        "Disponibilidad de maquinaria para cargas pesadas"
+      ]
+    }
+  ],
+  finalMessage: "Hacemos fácil y accesible la gestión de residuos para PYMES, talleres y hogares, cuidando el ambiente y su economía.",
+  ctaText: "Cotiza ahora mismo !!!"
+},
+
   {
     key: "acopiadores",
     title: "Acopiadores Mayoristas y Minoristas",
@@ -276,7 +280,7 @@ const ServicesGridSection = () => {
   const getPrimaryColor = (serviceKey) => {
     switch (serviceKey) {
       case "empresas": return "#00B04E";
-      case "electronicos": return "#F6AB00";
+      case "pymes": return "#F6AB00";
       case "acopiadores": return "#00B04E";
       case "exportacion": return "#272724";
       default: return "#00B04E";
@@ -450,7 +454,7 @@ const ServicesGridSection = () => {
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: i * 0.1 }}
                         >
-                          <span className="text-[#00B04E]"><FaCheckCircle size={16} /></span>
+                          <span className="text-[#00B04E]"><FaCheckCircle size={24} /></span>
                           <span className="text-[#272724]/90">{point}</span>
                         </motion.li>
                       ))}
@@ -485,7 +489,7 @@ const ServicesGridSection = () => {
                   whileTap={{ scale: 0.95 }}
                   className="flex items-center gap-2 bg-[#00B04E] text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl font-bold text-sm sm:text-base shadow-md hover:bg-[#86B500] transition-all duration-300"
                 >
-                  <FaRocket size={16} className="text-white" />
+                  <FaRocket size={34} className="text-white" />
                   {selected.ctaText}
                 </motion.button>
               </div>

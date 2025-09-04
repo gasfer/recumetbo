@@ -38,9 +38,9 @@ const AboutUs = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <div className="bg-[#FFFFFF] text-[#000000]">
-      {/* Hero Section */}
-<section className="relative h-[20vh] flex items-center justify-center bg-[#FFFFFF] text-white">
+    <section className="text-[#000000] relative bg-gradient-to-r from-[#F6AB00]/20 via-[#FFFFFF] to-[#00B04E]/20 py-16">
+      {/* Hero */}
+      <div className="relative h-[20vh] flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -52,10 +52,10 @@ const AboutUs = () => {
             Nuestra Historia
           </h1>
         </motion.div>
-      </section>
+      </div>
 
       {/* Intro */}
-      <section className="max-w-5xl mx-auto px-6 py-16 text-center">
+      <div className="max-w-5xl mx-auto px-6 py-16 text-center">
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -71,65 +71,68 @@ const AboutUs = () => {
           </span>
           .
         </motion.p>
-      </section>
-<section className="relative max-w-7xl mx-auto px-4 md:px-12 py-16">
-  {/* Tronco central */}
-  <motion.div
-    className="absolute left-1/2 top-0 bottom-0 w-2 bg-gradient-to-b from-[#00B04E] via-[#86B500] to-[#F6AB00] rounded-full z-0"
-    animate={{ y: [0, -20, 0] }}
-    transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-  />
+      </div>
 
-  <div className="relative flex flex-col gap-20">
-    {timeline.map((item, index) => {
-      const isLeft = index % 2 === 0;
-      return (
+      {/* Timeline */}
+      <div className="relative max-w-7xl mx-auto px-4 md:px-12 py-16">
+        {/* Tronco central */}
         <motion.div
-          key={index}
-          initial={{ opacity: 0, x: isLeft ? -150 : 150 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className={`flex relative w-full 
-            justify-center 
-            md:${isLeft ? "justify-end pr-[52%]" : "justify-start pl-[52%]"}`
-          }
-        >
-          {/* Nodo en el tronco */}
-          <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#FFFFFF] border-4 border-[#00B04E] shadow-lg z-20"></div>
+          className="absolute left-1/2 top-0 bottom-0 w-2 bg-gradient-to-b from-[#00B04E] via-[#86B500] to-[#F6AB00] rounded-full z-0"
+          animate={{ y: [0, -20, 0] }}
+          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        />
 
-          {/* Rama horizontal / bloque flotante */}
-          <motion.div
-            className="flex flex-row md:flex-row flex-col md:items-center gap-6 bg-white rounded-md shadow-md border border-[#86B500]/50 p-4 w-full md:w-[100%] cursor-pointer hover:shadow-xl transition z-10"
-            whileHover={{ scale: 1.03 }}
-            animate={{ x: [0, 12, -12, 0] }}
-            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          >
-            {/* Imagen pequeña */}
-            <img
-              src={item.img}
-              alt={item.title}
-              className="w-28 h-20 object-cover rounded-md shadow-md border border-[#F6AB00]/40 mx-auto md:mx-0"
-              onClick={() => setSelectedImage(item.img)}
-            />
+        <div className="relative flex flex-col gap-20">
+          {timeline.map((item, index) => {
+            const isLeft = index % 2 === 0;
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: isLeft ? -150 : 150 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className={`flex relative w-full 
+                  justify-center 
+                  md:${isLeft ? "justify-end pr-[52%]" : "justify-start pl-[52%]"}`}
+              >
+                {/* Nodo */}
+                <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#FFFFFF] border-4 border-[#00B04E] shadow-lg z-20"></div>
 
-            {/* Texto ajustado */}
-            <div className="flex-1 text-center md:text-left">
-              <h3 className="text-lg md:text-xl font-bold text-[#00B04E]">
-                {item.year} – {item.title}
-              </h3>
-              <p className="mt-2 text-sm md:text-base text-[#272724] leading-snug">
-                {item.text}
-              </p>
-            </div>
-          </motion.div>
-        </motion.div>
-      );
-    })}
-  </div>
-</section>
+                {/* Bloque flotante */}
+                <motion.div
+                  className="flex flex-row md:flex-row flex-col md:items-center gap-6 bg-white rounded-md shadow-md border border-[#86B500]/50 p-4 w-full md:w-[100%] cursor-pointer hover:shadow-xl transition z-10"
+                  whileHover={{ scale: 1.03 }}
+                  animate={{ x: [0, 12, -12, 0] }}
+                  transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                >
+                  {/* Imagen */}
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-28 h-20 object-cover rounded-md shadow-md border border-[#F6AB00]/40 mx-auto md:mx-0"
+                    onClick={() => setSelectedImage(item.img)}
+                  />
 
-
+                  {/* Texto */}
+                  <div className="flex-1 text-center md:text-left">
+                    <h3 className="text-lg md:text-xl font-bold text-[#00B04E]">
+                      {item.year} – {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm md:text-base text-[#272724] leading-snug">
+                      {item.text}
+                    </p>
+                  </div>
+                </motion.div>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
 
       {/* Lightbox */}
       <AnimatePresence>
@@ -162,7 +165,7 @@ const AboutUs = () => {
       </AnimatePresence>
 
       {/* Misión y Visión */}
-      <section className="bg-[#F6AB00]/10 py-16">
+      <div className="">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 px-6">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -197,8 +200,8 @@ const AboutUs = () => {
             </p>
           </motion.div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
